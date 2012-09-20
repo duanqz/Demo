@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xo.demo.widget.tabmenu.tabcontent.MenuViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <org.xo.demo.widget.tabmenu.tabcontent.TabAttachmentMenuView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/attachment_page_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:numColumns="3" >
+
+    </org.xo.demo.widget.tabmenu.tabcontent.TabAttachmentMenuView>
+
+    <GridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/attachment_page_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:numColumns="3" >
+
+    </GridView>
+
+</org.xo.demo.widget.tabmenu.tabcontent.MenuViewPager>

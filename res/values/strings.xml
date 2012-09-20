@@ -1,0 +1,41 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Demo of Xo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Demo by Xo</string>
+
+    <!-- Label of widget activity  -->
+    <string name="label_tab_menu">Widget/Tab Menu</string>
+    <string name="label_rotation3d_button">Widget/Rotation 3D Button</string>
+    <string name="label_viewflipper">Widget/View Flipper</string>
+
+    <!-- Label of sensor activity -->
+    <string name="label_flashlight">Sensor/Flash Light</string>
+    <string name="label_location">Sensor/Test Location</string>
+
+    <!-- Label of hello world activity -->
+    <string name="label_jni">Hello World/JNI</string>
+    <string name="label_aidl">Hello World/Service</string>
+
+    <!-- ================= Useful string ================= -->
+    <!-- Tab menu -->
+    <string name="tab_menu_expression">Tab 1</string>
+    <string name="tab_menu_attachment">Tab 2</string>
+    <string name="tab_menu_choice">Tab 3</string>
+
+    <!-- Location -->
+    <string name="location_succ">Latitude: <xliff:g id="lat">%s</xliff:g>\nLongtitude: <xliff:g id="long">%s</xliff:g></string>
+    <string name="location_fail">Locate failed</string>
+    <string name="location_time">Cost Time is <xliff:g id="lat">%s</xliff:g> seconds.</string>
+
+    <!-- Service -->
+    <string name="service_remote_info">Remote Info\n Pid : <xliff:g id="pid">%s</xliff:g>\n Uid : <xliff:g id="uid">%s</xliff:g>\n Tid : <xliff:g id="tid">%s</xliff:g></string>
+    <string name="service_local_info">Local Info\n Pid : <xliff:g id="pid">%s</xliff:g>\n Uid : <xliff:g id="uid">%s</xliff:g>\n Tid : <xliff:g id="tid">%s</xliff:g></string>
+    
+    <!-- Flashlight -->
+    <string name="flash_window">Flash Window</string>
+    <string name="flash_camera">Flash Camera</string>
+    <string name="sos_window">SOS Window</string>
+    <string name="stop_flash">Stop</string>
+</resources>
