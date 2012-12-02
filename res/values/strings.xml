@@ -17,6 +17,10 @@
     <!-- Label of hello world activity -->
     <string name="label_jni">Hello World/JNI</string>
     <string name="label_aidl">Hello World/Service</string>
+	<string name="label_gif">Hello World/GIF</string>
+	<string name="label_nfc">Hello World/NFC</string>
+	<string name="label_deviceinfo">Hello World/Device Info</string>
+	<string name="label_parcelable">Hello World/Parcelable</string>
 
     <!-- ================= Useful string ================= -->
     <!-- Tab menu -->
@@ -32,7 +36,7 @@
     <!-- Service -->
     <string name="service_remote_info">Remote Info\n Pid : <xliff:g id="pid">%s</xliff:g>\n Uid : <xliff:g id="uid">%s</xliff:g>\n Tid : <xliff:g id="tid">%s</xliff:g></string>
     <string name="service_local_info">Local Info\n Pid : <xliff:g id="pid">%s</xliff:g>\n Uid : <xliff:g id="uid">%s</xliff:g>\n Tid : <xliff:g id="tid">%s</xliff:g></string>
-    
+
     <!-- Flashlight -->
     <string name="flash_window">Flash Window</string>
     <string name="flash_camera">Flash Camera</string>

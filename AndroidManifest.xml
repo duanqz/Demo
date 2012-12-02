@@ -6,7 +6,9 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
 
     <uses-sdk android:minSdkVersion="14" />
 
@@ -80,6 +82,7 @@
         <activity
             android:name=".helloworld.helloservice.HelloServiceActivity" 
             android:label="@string/label_aidl"
+            android:configChanges="orientation|screenSize"
             android:exported="false" >
              <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -87,6 +90,58 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".helloworld.hellogif.HelloGifActivity" 
+            android:label="@string/label_gif"
+            android:exported="false" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".helloworld.hellonfc.HelloNfcActivity" 
+            android:label="@string/label_nfc"
+            android:exported="false" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".helloworld.hellodeviceinfo.HelloDeviceInfoActivity" 
+            android:label="@string/label_deviceinfo"
+            android:taskAffinity="org.xo.demo.deviceinfo"
+            android:launchMode="singleTop"
+            android:exported="false" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".helloworld.helloparcel.HelloParcelableActivity" 
+            android:label="@string/label_parcelable"
+            android:exported="false" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".helloworld.helloparcel.AActivity" 
+            android:exported="false" >
+        </activity>
+
+        <activity
+            android:name=".helloworld.helloparcel.BActivity" 
+            android:exported="false" >
+        </activity>
+        
         <service android:name=".helloworld.helloservice.local.LocalService"
             android:exported="false" > 
             <intent-filter> 
@@ -101,6 +156,7 @@
                 <action android:name="org.xo.demo.helloworld.helloservice.remote.RemoteService" /> 
             </intent-filter>  
         </service>
+
     </application>
 
 </manifest>
