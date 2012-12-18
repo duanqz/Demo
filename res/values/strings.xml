@@ -14,6 +14,9 @@
     <string name="label_flashlight">Sensor/Flash Light</string>
     <string name="label_location">Sensor/Test Location</string>
 
+    <!-- Label of net activity -->
+    <string name="label_wifi_direct">Net/Wifi Direct</string>
+
     <!-- Label of hello world activity -->
     <string name="label_jni">Hello World/JNI</string>
     <string name="label_aidl">Hello World/Service</string>
