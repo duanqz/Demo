@@ -173,6 +173,16 @@
             </intent-filter>  
         </service>
 
+        <receiver android:name=".helloworld.hellowidget.HelloWidgetProvider"
+            android:exported="false">
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/hellowidget_provider" />
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>
