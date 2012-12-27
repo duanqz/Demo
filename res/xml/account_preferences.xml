@@ -1,0 +1,12 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">  
+<PreferenceCategory android:title="@string/hello_world" />
+        <PreferenceScreen
+              android:key="pref_key_go_to_hello_account"
+              android:title="@string/hello_account_title"
+              android:summary="@string/hello_account_summary">
+              <intent
+                     android:action="ACTION"
+                     android:targetPackage="org.xo.demo"
+                     android:targetClass="org.xo.demo.helloworld.helloaccount.HelloAccountActivity" />
+        </PreferenceScreen>
+</PreferenceScreen>

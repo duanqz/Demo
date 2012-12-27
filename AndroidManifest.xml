@@ -14,6 +14,9 @@
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
 
     <uses-sdk android:minSdkVersion="14" />
 
@@ -157,7 +160,17 @@
             android:name=".helloworld.helloparcel.BActivity" 
             android:exported="false" >
         </activity>
-        
+
+        <activity
+            android:name=".helloworld.helloaccount.HelloAccountActivity" 
+            android:label="@string/label_account"
+            android:exported="false" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
         <service android:name=".helloworld.helloservice.local.LocalService"
             android:exported="false" > 
             <intent-filter> 
@@ -171,6 +184,19 @@
             <intent-filter> 
                 <action android:name="org.xo.demo.helloworld.helloservice.remote.RemoteService" /> 
             </intent-filter>  
+        </service>
+
+        <service android:name=".helloworld.helloaccount.HelloAccountService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/helloaccount_authenticator" >
+            </meta-data>
+ 
         </service>
 
         <receiver android:name=".helloworld.hellowidget.HelloWidgetProvider"

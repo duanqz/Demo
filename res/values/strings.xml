@@ -20,10 +20,11 @@
     <!-- Label of hello world activity -->
     <string name="label_jni">Hello World/JNI</string>
     <string name="label_aidl">Hello World/Service</string>
-	<string name="label_gif">Hello World/GIF</string>
-	<string name="label_nfc">Hello World/NFC</string>
-	<string name="label_deviceinfo">Hello World/Device Info</string>
-	<string name="label_parcelable">Hello World/Parcelable</string>
+    <string name="label_gif">Hello World/GIF</string>
+    <string name="label_nfc">Hello World/NFC</string>
+    <string name="label_deviceinfo">Hello World/Device Info</string>
+    <string name="label_parcelable">Hello World/Parcelable</string>
+    <string name="label_account">Hello World/Account</string>
 
     <!-- ================= Useful string ================= -->
     <!-- Tab menu -->
@@ -45,4 +46,15 @@
     <string name="flash_camera">Flash Camera</string>
     <string name="sos_window">SOS Window</string>
     <string name="stop_flash">Stop</string>
+
+    <!-- Account -->
+    <string name="hello_account_title">Hello Account</string>
+    <string name="hello_account_summary">Goto Hello Account</string>
+    <string name="add_account">Add Account</string>
+    <string name="rem_account">Remove Account</string>
+    <string name="account_name">Account Name</string>
+    <string name="account_type">Account Type</string>
+    <string name="account_password">Password</string>
+    <string name="invalid_account_type_toast">Account Type should be org.xo</string>
+    <string name="account_already_exists">Account already exists.</string>
 </resources>
