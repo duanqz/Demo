@@ -25,6 +25,7 @@
     <string name="label_deviceinfo">Hello World/Device Info</string>
     <string name="label_parcelable">Hello World/Parcelable</string>
     <string name="label_account">Hello World/Account</string>
+    <string name="label_statemachine">Hello World/State Machine</string>
 
     <!-- ================= Useful string ================= -->
     <!-- Tab menu -->
