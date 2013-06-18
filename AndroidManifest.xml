@@ -171,6 +171,16 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".helloworld.hellojni.HelloJniActivity"
+            android:label="@string/label_jni"
+            android:exported="false" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
         <service android:name=".helloworld.helloservice.local.LocalService"
             android:exported="false" > 
             <intent-filter> 
@@ -209,6 +219,16 @@
             </intent-filter>
         </receiver>
 
+        <!-- ================ Tool ================ -->
+        <activity
+            android:name=".tool.reflect.ReflectActivity"
+            android:label="@string/label_reflect"
+            android:exported="false" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -27,6 +27,12 @@
     <string name="label_account">Hello World/Account</string>
     <string name="label_statemachine">Hello World/State Machine</string>
 
+    <!-- Label of tool activity -->
+    <string name="label_reflect">Tool/Reflect</string>
+
+    <!-- Label of advertisement activity -->
+    <string name="label_mobclix">Advertisement/Mobclix</string>
+
     <!-- ================= Useful string ================= -->
     <!-- Tab menu -->
     <string name="tab_menu_expression">Tab 1</string>
@@ -58,4 +64,10 @@
     <string name="account_password">Password</string>
     <string name="invalid_account_type_toast">Account Type should be org.xo</string>
     <string name="account_already_exists">Account already exists.</string>
+
+    <!-- Reflect -->
+    <string name="input_class_name">Input Class Name</string>
+    <string name="input_field_name">Input Field Name</string>
+    <string name="input_method_name">Input Method Name</string>
+    <string name="query_result">Query Result</string>
 </resources>
