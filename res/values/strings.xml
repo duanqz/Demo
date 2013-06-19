@@ -32,6 +32,7 @@
 
     <!-- Label of advertisement activity -->
     <string name="label_mobclix">Advertisement/Mobclix</string>
+    <string name="label_youmi">Advertisement/Youmi</string>
 
     <!-- ================= Useful string ================= -->
     <!-- Tab menu -->
@@ -70,4 +71,7 @@
     <string name="input_field_name">Input Field Name</string>
     <string name="input_method_name">Input Method Name</string>
     <string name="query_result">Query Result</string>
+
+    <!-- Advertisement -->
+    <string name="youmi_description">This is a demo for advertisement provided by YouMi.</string>
 </resources>
