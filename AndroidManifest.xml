@@ -182,6 +182,21 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".helloworld.helloio.HelloIOActivity"
+            android:label="@string/label_io"
+            android:exported="false" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".helloworld.helloio.FileContentActivity"
+            android:exported="false" >
+        </activity>
+
         <service android:name=".helloworld.helloservice.local.LocalService"
             android:exported="false" > 
             <intent-filter> 

@@ -26,6 +26,7 @@
     <string name="label_parcelable">Hello World/Parcelable</string>
     <string name="label_account">Hello World/Account</string>
     <string name="label_statemachine">Hello World/State Machine</string>
+    <string name="label_io">Hello World/IO</string>
 
     <!-- Label of tool activity -->
     <string name="label_reflect">Tool/Reflect</string>
@@ -79,4 +80,8 @@
 
     <!-- Advertisement -->
     <string name="youmi_description">This is a demo for advertisement provided by YouMi.</string>
+
+    <!-- IO -->
+    <string name="input_the_directory">Input the Directory</string>
+    <string name="no_files">No files in the directory</string>
 </resources>
