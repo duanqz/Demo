@@ -31,6 +31,7 @@
     <!-- Label of tool activity -->
     <string name="label_reflect">Tool/Reflect</string>
     <string name="label_againstcrack">Tool/Against Crack</string>
+    <string name="label_usagestats">Tool/Usage Statistic</string>
 
     <!-- Label of advertisement activity -->
     <string name="label_mobclix">Advertisement/Mobclix</string>

@@ -256,6 +256,16 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".tool.usagestats.UsageStatsActivity"
+            android:label="@string/label_usagestats"
+            android:exported="false" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
         <!-- ================ Advertisement ================ -->
         <!-- This is the application ID offered by www.mobclix.com after register -->
         <meta-data android:name="com.mobclix.APPLICATION_ID"
