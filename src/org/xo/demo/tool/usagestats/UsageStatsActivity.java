@@ -45,7 +45,7 @@ public class UsageStatsActivity extends ListActivity {
                 android.R.layout.simple_expandable_list_item_1,
                 allUsageStats));
     }
-    
+
     private String[] getPkgUsageStats() {
         PkgUsageStats[] allPkgUsageStats = null;
         try {
