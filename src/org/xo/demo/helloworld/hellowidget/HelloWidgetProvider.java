@@ -19,7 +19,7 @@ public class HelloWidgetProvider extends AppWidgetProvider {
             int appWidgetId = appWidgetIds[i];
             RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.hello_widget_layout);
             java.text.DateFormat df = new java.text.SimpleDateFormat("hh:mm:ss");
-            views.setTextViewText(R.id.text, "当前时间：" + df.format(new Date()));
+            views.setTextViewText(R.id.text, "Current Time" + df.format(new Date()));
             appWidgetManager.updateAppWidget(appWidgetId, views);
         }
     }
