@@ -28,6 +28,10 @@
     <string name="label_statemachine">Hello World/State Machine</string>
     <string name="label_io">Hello World/IO</string>
 
+	<string name="label_binder">Refine/Binder</string>
+	<string name="label_injector">Refine/Injector</string>
+	<string name="label_annotation">Refine/Annotation</string>
+
     <!-- Label of tool activity -->
     <string name="label_reflect">Tool/Reflect</string>
     <string name="label_againstcrack">Tool/Against Crack</string>
