@@ -1,7 +1,34 @@
-.gitignore
+# Gradle
+.gradle/
 bin/
-gen/
-.settings/
-.project
-.classpath
-project.properties
+local.properties
+
+# Build
+**/build/
+
+# Eclipse
+**/nbproject/private/
+*.project
+*.classpath
+*.settings
+*.setting
+
+# IntelliJ
+*.iml
+.idea/*
+/out
+
+# Other files
+*.IAB
+*.IAD
+*.IMB
+*.IMD
+*.PFI
+*.PO
+*.PR
+*.PRI
+*.PS
+*.so
+*.o
+*.WK3
+
