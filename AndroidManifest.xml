@@ -131,18 +131,6 @@
         </activity>
 
         <activity
-            android:name=".helloworld.hellodeviceinfo.HelloDeviceInfoActivity" 
-            android:label="@string/label_deviceinfo"
-            android:taskAffinity="org.xo.demo.deviceinfo"
-            android:launchMode="singleTop"
-            android:exported="false" >
-             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-
-        <activity
             android:name=".helloworld.helloparcel.HelloParcelableActivity" 
             android:label="@string/label_parcelable"
             android:exported="false" >
@@ -202,26 +190,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".helloworld.helloinjector.RefineInjectorActivity"
-            android:label="@string/label_injector"
-            android:exported="false" >
-             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".helloworld.helloannotation.HelloAnnotationActivity"
-            android:label="@string/label_annotation"
-            android:exported="false" >
-             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-
         <service android:name=".helloworld.helloservice.local.LocalService"
             android:exported="false" > 
             <intent-filter> 
@@ -274,26 +242,6 @@
         <activity
             android:name=".tool.againstcrack.AgainstCrackActivity"
             android:label="@string/label_againstcrack"
-            android:exported="false" >
-             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".tool.usagestats.UsageStatsActivity"
-            android:label="@string/label_usagestats"
-            android:exported="false" >
-             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".tool.usagestats.ReflectUsageStatsActivity"
-            android:label="@string/label_reflect_usagestats"
             android:exported="false" >
              <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
