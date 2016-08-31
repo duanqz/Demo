@@ -16,7 +16,7 @@ android {
 
     sourceSets {
         main {
-            manifest.srcFile("AndroidManifest.xml")
+            manifest.srcFile "AndroidManifest.xml"
             java.srcDirs = ["src"]
             resources.srcDirs = ["src"]
             aidl.srcDirs = ["src"]
@@ -24,10 +24,14 @@ android {
         }
     }
 
+    aaptOptions {
+        additionalParameters("-a")
+    }
+
     defaultConfig {
         applicationId "org.xo.demo"
-        minSdkVersion 13
-        targetSdkVersion 21
+        minSdkVersion 14
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }

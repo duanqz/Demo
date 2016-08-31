@@ -5,8 +5,10 @@ import java.util.TimerTask;
 
 import org.xo.demo.R;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -23,7 +25,7 @@ public class TestLocationActivity extends Activity {
 
     private LocationManager mLocationMananger;
     private LocationListener mLocationListner;
-    
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,8 +45,12 @@ public class TestLocationActivity extends Activity {
 
         mLocationListner = new MyLocationListner();
         mLocationMananger = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
-        mLocationMananger.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,
-                0, 0, mLocationListner);
+        try {
+            mLocationMananger.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,
+                    0, 0, mLocationListner);
+        } catch (SecurityException e) {
+            // Ignore
+        }
     }
 
     private class MyLocationListner implements LocationListener {
@@ -91,7 +97,11 @@ public class TestLocationActivity extends Activity {
         }
 
         if(mLocationMananger != null) {
-            mLocationMananger.removeUpdates(mLocationListner);
+            try {
+                mLocationMananger.removeUpdates(mLocationListner);
+            } catch (SecurityException e) {
+                // Ignore
+            }
         }
         mTimer.cancel();
     }
